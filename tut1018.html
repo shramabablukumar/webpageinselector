@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Befor and after pseudo selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content:"";
+
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+        .navigation{
+
+            font-family:'Montserrat', sans-serif; 
+            font-size: 30px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            margin: 3px 230px;
+            display: flex;
+
+             flex-direction: column; 
+             align-items: center;
+             justify-content: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        /* section::before{
+            content:"This is a content"
+        } */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+       
+    </header>
+     <section>
+           <h2> Welcome to coding World</h2>
+           <p>e aut, quam consequatur nisi vitae non numquam, voluptatem quo qui tempore alias explicabo ab. Veritatis iure nisi, adipisci blanditiis culpa quod in tempore animi iste perspiciatis.
+           Magnam quae sunt ipsa exercitationem vero ratione eius natus aut, deserunt, aperiam molestiae quis aspernatur eum doloribus fugit officia iusto nulla dolor? Suscipit reiciendis dolorem
+           Dignissimos suscipit temporibus officia numquam dolore nobis excepturi eaque debitis doloribus ea id veritatis corporis, repudiandae, unde voluptatibus consequuntur, quod omnis sit inv</p>
+        </section>
+        <hr>
+        
+        
+
+    
+</body>
+</html>
